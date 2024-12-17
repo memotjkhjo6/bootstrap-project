@@ -3,16 +3,6 @@ $(document).ready(function () {
         $(".color-option").toggle();
     });
 
-    $(window).on('load', function () {
-        $(".Loading-overlay .sk-chase").fadeOut(2000, function () {
-            $(this).parent().fadeOut(2000,
-                function () {
-                    $("body").css("overflow", "auto");
-                    $(this).remove()
-                }
-            )
-        });
-    });
 
 
     var scrollButton = $("#scroll-top");
